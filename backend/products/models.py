@@ -34,6 +34,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=15, decimal_places=2, default=99.99)
     public = models.BooleanField(default=True)
 
+    objects = ProductManager()
+
     def __str__(self):
         return f"{self.title} -> {self.pk}"
 
