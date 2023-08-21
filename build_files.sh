@@ -1,2 +1,2 @@
 pip install -r requirements.txt
-python3.9 managage.py
+python3.9 managage.py runserver
