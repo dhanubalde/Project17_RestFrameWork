@@ -83,6 +83,8 @@ class ProductUpdateAPIView(
 
 product_update_view = ProductUpdateAPIView.as_view()
 
+
+
 # delete view url path
 
 

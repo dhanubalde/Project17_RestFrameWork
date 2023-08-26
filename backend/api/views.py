@@ -12,6 +12,7 @@ def api_home(request, *args, **kwargs):
         DRF API View
     """
     # create method
+    queryset = Product.objects.all()
     serializer = ProductSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
         # instance = serializer.save()
