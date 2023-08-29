@@ -6,13 +6,12 @@ from rest_framework.response import Response
 from products.serializers import ProductSerializer
 
 
-@api_view(["POST"])
+@api_view(["GET"])
 def api_home(request, *args, **kwargs):
     """
         DRF API View
     """
     # create method
-    queryset = Product.objects.all()
     serializer = ProductSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
         # instance = serializer.save()
