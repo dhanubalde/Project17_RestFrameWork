@@ -1,1 +1,2 @@
+pip install --upgrade pip
 python-3.10.12
