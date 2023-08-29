@@ -1,6 +1,6 @@
 from rest_framework import generics
 from rest_framework.response import Response
-from products.serializers import ProductSerializer
+from products.serializer import ProductSerializer
 from products.models import Product
 # from . import client
 
@@ -33,4 +33,3 @@ class SearchListView(generics.ListAPIView):
                 user = self.request.user
             results = qs.search(q, user=user)
         return results
-    

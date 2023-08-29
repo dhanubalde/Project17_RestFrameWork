@@ -1,6 +1,6 @@
 from rest_framework import viewsets, mixins
 from .models import Product
-from .serializers import ProductSerializer
+from .serializer import ProductSerializer
 
 
 class ProductViewSet(viewsets.ModelViewSet):

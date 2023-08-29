@@ -6,7 +6,7 @@ from .models import Product
 from api.mixins import (StaffEditorPermissionMixin, UserQuerySetMixin)
 # from api.auth import TokenAuthentication
 # from ..api.permissions import IsStaffEditorPermission
-from .serializers import ProductSerializer
+from .serializer import ProductSerializer
 # from django.shortcuts import get_list_or_404
 from django.http import Http404
 
@@ -82,7 +82,6 @@ class ProductUpdateAPIView(
 
 
 product_update_view = ProductUpdateAPIView.as_view()
-
 
 
 # delete view url path
